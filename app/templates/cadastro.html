@@ -1,18 +1,23 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}   <!-- O método POST coleta os dados e direciona para um caminho -->
-  <form action="/cadastrarUsuario" method="POST">
-    <label>CPF:</label>
-    <input type="text" name="cpf" id="cpf" /><br><br>
+<h1 data-shadow='CADASTRO'>CADASTRO</h1>
 
+  <form action="/cadastrarUsuario" method="POST">
     <label>Nome:</label>
     <input type="text" name="nome" id="nome" /><br><br>
+
+    <label>CPF:</label>
+    <input type="text" name="cpf" id="cpf" /><br><br>
 
     <label>Telefone:</label>
     <input type="text" name="telefone" id="telefone" /><br><br>
 
     <label>Endereço:</label>
     <input type="text" name="endereco" id="endereco" /><br><br>
+
+    <label>Email:</label>
+    <input type="text" name="email" id="email" /><br><br>
 
     <button>Cadastrar</button>
 

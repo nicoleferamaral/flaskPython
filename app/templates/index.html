@@ -1,8 +1,115 @@
 {% extends 'base.html' %}
 
 {% block conteudo %} <!-- Inicializando o conteudo da página -->
-  <h1>Página Inicial</h1>
+  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/lencois.jpg" height="750px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lençóis Maranhenses - MA</h5>
+        <p>Um espetáculo da natureza, onde dunas de areia branca se encontram com lagoas de água cristalina, criando uma paisagem de tirar o fôlego.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/forte.jpg" height="750px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Praia do Forte - BA</h5>
+        <p>Um paraíso tropical, famosa por suas águas claras, recifes de corais e a preservação das tartarugas marinhas, encantando visitantes com sua beleza natural.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/cristo.webp" height="750px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Copacabana - RJ</h5>
+        <p>ícone do Rio de Janeiro, conhecida por sua vibrante atmosfera, calçadão repleto de vida e vistas deslumbrantes do Pão de Açúcar.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<br><br>
+<h1> Pacotes de viagens</h1>
+<br> <br>
 
+  <div class="card-group">
+  <div class="card">
+    <img src="static/beto1.jpg" height="300px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Beto Carrero</h5>
+      <p class="card-text"> Um destino mágico que combina aventura, diversão e a beleza do mundo dos parques temáticos no Brasil.<br><br> <b> 4 dias e 3 noites</b> <br><br> <b> Inclui:</b> <br>
+<b> Transporte:</b> Ida e volta em ônibus confortável ou voos diretos para a região de Penha, Santa Catarina.<br>
+<b>Hospedagem:</b> 3 noites em hotel próximo ao parque, com café da manhã incluso.<br>
+<b>Ingressos:</b> Acesso ilimitado ao Beto Carrero World por 2 dias, permitindo que você explore todas as atrações.<br>
+<b>Excursões:</b>  Passeio guiado pelas principais atrações da região, incluindo a visita ao Centro de Eventos e o Parque Natural.<br>
+<b>Alimentação:</b>  2 almoços em restaurantes parceiros dentro do parque, com opções variadas para todas as idades. <br><br>
+<b>Destaques do Pacote:</b><br>
+Experiência completa em um dos maiores parques temáticos da América Latina, com montanhas-russas emocionantes, shows incríveis e uma vasta gama de atrações para toda a família.<br>
+Atendimento personalizado com guias experientes, prontos para ajudar em tudo o que você precisar durante a sua estadia. <br>
+Opção de upgrade para experiências VIP, incluindo acesso rápido às atrações e encontros com personagens. <br><br>
+<b>Período: </b> Pacote disponível durante todo o ano, com opções especiais em feriados e alta temporada. <br><br>
 
+<b>Reserve já e garanta momentos inesquecíveis no mundo encantado do Beto Carrero!</b></p>
+      <p class="card-text"><small class="text-body-secondary">10/11/2024</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="static/hopi.jpg" height="300px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Hopi-Hari</h5>
+      <p class="card-text">Um dos parques temáticos mais emocionantes do Brasil, oferecendo uma experiência cheia de adrenalina e diversão para toda a família.<br><br> <b> 2 dias e 1 noite</b> <br><br><b>Inclui:</b>
+<br> <br>
+<b>Transporte:</b> Transporte confortável de ida e volta em ônibus executivo, saindo de São Paulo ou Campinas.<br>
+<b>Hospedagem:</b> 2 noites em hotel próximo ao parque, com café da manhã incluso.<br>
+<b>Ingressos:</b> Acesso ilimitado ao Hopi Hari por 1 dia, permitindo aproveitar todas as atrações emocionantes.<br>
+<b>Alimentação:</b> Almoço em restaurante dentro do parque, com opções variadas e saborosas.<br>
+<b>Guia: </b>Acompanhamento de guia experiente, que irá ajudar a otimizar sua visita e garantir que você não perca nenhuma atração.<br> <br>
+<b>Destaques do Pacote:</b><br>
+
+Descubra a magia do Hopi Hari, com montanhas-russas radicais, shows ao vivo e áreas temáticas incríveis.<br>
+Ideal para todas as idades, com atrações que vão desde o relaxante “Mundo da Criança” até as emocionantes aventuras de “Wild West”.<br>
+Opção de upgrade para experiências exclusivas, como fast pass para evitar filas e pacotes de fotos com personagens.<br> <br>
+<b>Período:</b> Pacote disponível durante todo o ano, com ofertas especiais em feriados e alta temporada.<br> <br>
+
+<b>Garanta sua diversão e crie memórias inesquecíveis no fantástico mundo do Hopi Hari!</b> </p>
+      <p class="card-text"><small class="text-body-secondary">10/11/2024</small></p>
+
+    </div>
+  </div>
+  <div class="card">
+    <img src="static/wet.jpg" height="300px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Wet'n Wild</h5>
+      <p class="card-text">O paraíso aquático perfeito para se refrescar e se divertir em família, com emocionantes toboáguas e atrações para todas as idades.<br><br> <b> 2 dias e 1 noite</b> <br><br><b>Inclui:</b> <br>
+     <br><b> Transporte:</b> Ida e volta em ônibus executivo, saindo de São Paulo ou Campinas, com conforto e segurança.
+<br><b>Hospedagem:</b> 2 noites em hotel selecionado na região, com café da manhã incluso.
+<br><b>Ingressos:</b> Acesso ilimitado ao Wet'n Wild por 1 dia, permitindo que você aproveite todas as atrações aquáticas.
+<br><b>Alimentação:</b> Almoço em um dos restaurantes do parque, com opções deliciosas e refrescantes.
+<br><b>Guia:</b> Acompanhamento de guia especializado para otimizar sua experiência e ajudar com dicas sobre as melhores atrações.
+<br><br><b>Destaques do Pacote:</b>
+<br>
+Desfrute de uma variedade de toboáguas emocionantes, piscinas de ondas e áreas de lazer para crianças.
+Ideal para toda a família, com atividades que vão desde relaxar em um lazy river até desafios radicais em toboáguas.
+Opção de upgrade para cabanas VIP, oferecendo um espaço privativo para descanso durante o dia.
+Período: Pacote disponível durante todo o ano, com promoções especiais em feriados e alta temporada.
+
+<br><b>Reserve agora e mergulhe em um dia de pura diversão no Wet'n Wild!</b></p>
+      <p class="card-text"><small class="text-body-secondary">10/11/2024</small></p>
+    </div>
+  </div>
+</div>
+<br><br>
 {% endblock %}

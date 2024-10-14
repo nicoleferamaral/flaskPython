@@ -2,6 +2,8 @@
 
 {% block conteudo %}   <!-- O método POST coleta os dados e direciona para um caminho -->
 <h1 data-shadow='CADASTRO'>CADASTRO</h1>
+<br><br><br>
+<section class="form">
 
   <form action="/cadastrarUsuario" method="POST">
     <label>Nome:</label>
@@ -22,12 +24,14 @@
     <button>Cadastrar</button>
 
   </form>
+</section>
 <!-- O formulário só tem um botão e só tem uma action, caso precise de mais, precisa criar outro form -->
-<br><br>
-
-  <a href="/listar">Consultar tudo</a> <br><br>
-  <a href="/listarIndividual">Consultar individual</a><br><br>
-  <a href="/atualizar">Atualizar</a><br><br>
-  <a href="/excluir">Excluir</a><br><br>
+<br><br><br><br>
+<section class="bot">
+    <button class="custom-btn btn-9"><a href="/listar">Consultar</a></button>
+    <button class="custom-btn btn-9"><a href="/listarIndividual"> Individual</a></button>
+    <button class="custom-btn btn-9"><a href="/atualizar">Atualizar</a></button>
+    <button class="custom-btn btn-9"><a href="/excluir">Excluir</a></button>
+</section>
 
 {% endblock %}

@@ -3,6 +3,7 @@
 {% block conteudo %}   <!-- O método POST coleta os dados e direciona para um caminho -->
 <h1 data-shadow='CADASTRO'>CADASTRO</h1>
 <br><br><br>
+<div id="center">
 <section class="form">
 
   <form action="/cadastrarUsuario" method="POST">
@@ -10,7 +11,7 @@
     <input type="text" name="nome" id="nome" /><br><br>
 
     <label>CPF:</label>
-    <input type="text" name="cpf" id="cpf" /><br><br>
+    <input type="number" name="cpf" id="cpf" /><br><br>
 
     <label>Telefone:</label>
     <input type="text" name="telefone" id="telefone" /><br><br>
@@ -19,19 +20,90 @@
     <input type="text" name="endereco" id="endereco" /><br><br>
 
     <label>Email:</label>
-    <input type="text" name="email" id="email" /><br><br>
+    <input type="email" name="email" id="email" /><br><br>
 
-    <button>Cadastrar</button>
+      <label>Senha:</label>
+    <input type="password" name="senha" id="senha" /><br><br>
+
+     <button class="custom-btn btn-9">Cadastrar</button>
 
   </form>
 </section>
+    </div>
 <!-- O formulário só tem um botão e só tem uma action, caso precise de mais, precisa criar outro form -->
 <br><br><br><br>
 <section class="bot">
     <button class="custom-btn btn-9"><a href="/listar">Consultar</a></button>
-    <button class="custom-btn btn-9"><a href="/listarIndividual"> Individual</a></button>
+    <button class="custom-btn btn-9"><a href="/consultar"> Individual</a></button>
     <button class="custom-btn btn-9"><a href="/atualizar">Atualizar</a></button>
     <button class="custom-btn btn-9"><a href="/excluir">Excluir</a></button>
 </section>
+
+<br><br><br><br>
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Cadastre-se</h3>
+                                <p>Não esqueça de se cadastrar para saber mais sobre nossos pacotes!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit"><a href="/cadastro"> Cadastrar </a></button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Instale nosso aplicativo</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="https://play.google.com/store/games?hl=pt_BR">Android App</a></li>
+                                    <li><a href="https://www.apple.com/br/app-store/">ios App</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Ajuda</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="/contato">FAQ</a></li>
+                                    <li><a href="/contato">Termos &amp; Condições</a></li>
+                                    <li><a href="/contato">Reporte</a></li>
+                                    <li><a href="/contato">Documentação</a></li>
+                                    <li><a href="/contato">Privacidade</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Siga-nos</h3>
+                                <div class="f_social_icon">
+                                    <a href="https://www.facebook.com/?locale=pt_BR" class="fab fa-facebook"><img src="static/face2.jpg" width="25px" height="25px"></a>
+                                    <a href="https://www.facebook.com/?locale=pt_BR" class="fab fa-twitter"><img src="static/x.webp" width="40px" height="30px"></a>
+                                    <a href="https://www.instagram.com/" class="fab fa-instagram"><img src="static/insta.avif" width="30px" height="30px"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© Nicole Ferreira do Amaral</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 {% endblock %}

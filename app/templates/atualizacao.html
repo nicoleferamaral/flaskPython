@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+  <form class="row g-3" action="/atualizar" method="POST">
+      <div class="col-md-3">
+
+
+      </div><div class="col-md-6">
+        <label class="form-label">CPF</label>
+        <input type="text" class="form-control" name="cpf" id="cpf" placeholder={{cpf}}>
+      </div><div class="col-md-2">
+
+
+      </div><div class="col-12">
+        <label class="form-label">Nome</label>
+        <input type="text" class="form-control" name="nome" id="nome" placeholder="">
+      </div><div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Senha</label>
+        <input type="password" class="form-control" name="senha" id="senha">
+      </div>
+      <div class="col-6">
+        <label class="form-label">Telefone</label>
+        <input type="text" class="form-control" name="telefone" id="telefone" >
+      </div>
+      <div class="col-6">
+        <label class="form-label">Endereço</label>
+        <input type="text" class="form-control" name="endereco" id="endereco" >
+      </div>
+
+
+
+      <div class="col-12">
+
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+      </div>
+  </form>
+
+{% endblock %}

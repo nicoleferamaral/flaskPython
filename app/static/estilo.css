@@ -16,6 +16,12 @@ p{
   position: fixed-top;
 }
 
+textarea{
+     vertical-align: top;
+     width: 400px;
+     height: 200px;
+}
+
 h1 {
   display: inline-block;
   color: white;
@@ -89,6 +95,7 @@ h2 {
   0% {background-position: 0 0}
   0% {background-position: 100% -100%}
   }
+
 
 
  .new_footer_area {
